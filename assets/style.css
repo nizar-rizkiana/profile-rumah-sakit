@@ -1,0 +1,331 @@
+/*=================================
+		element show on scroll
+==================================*/
+
+.list-icon.is-visible{
+	transform: rotateY(360deg);
+}
+.superiority{
+	left: -300px;
+	opacity: 0;
+	position: relative;
+	transition: 3s;
+}
+.superiority.is-visible{
+	left: 0;
+	opacity: 1;
+}
+#doctors{
+	transform: scale(0.8);
+	opacity: .5;
+	transition: 2s;
+}
+#doctors.is-visible{
+	opacity: 1;
+	transform: scale(1);
+}
+#img-faq{
+	position: relative;
+	opacity: 0;
+	right: -300px;
+	transition: 3s;
+}
+#img-faq.is-visible{
+	right: 0;
+	opacity: 1;
+}
+#img-faq-mobile{
+	position: relative;
+	opacity: 0;
+	left: -300px;
+	transition: 3s;
+}
+#img-faq-mobile.is-visible{
+	left: 0;
+	opacity: 1;
+}
+#faq{
+	position: relative;
+	opacity: 0;
+	top: 150px;
+	transition: 2s;
+}
+#faq.is-visible{
+	top: 0;
+	opacity: 1;
+}
+#img-about{
+	bottom: -200px;
+	opacity: 0;
+	position: relative;
+	transition: 2s;
+}
+#img-about.is-visible{
+	opacity: 1;
+	bottom: 0;
+}
+#text-about{
+	opacity: 0;
+	position: relative;
+	bottom: -300px;
+	transition: 3s;
+}
+#text-about.is-visible{
+	opacity: 1;
+	bottom: 0;
+}
+/*===================================*/
+/*masonry layout*/
+/*img {
+	max-width: 100%;
+	height: auto;
+	vertical-align: middle;
+	display: inline-block;
+}*/
+
+/* Main CSS */
+.grid-wrapper > div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.grid-wrapper > div > img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 5px;
+}
+
+.grid-wrapper {
+	display: grid;
+	grid-gap: 10px;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	grid-auto-rows: 200px;
+	grid-auto-flow: dense;
+}
+.grid-wrapper .wide {
+	grid-column: span 2;
+}
+.grid-wrapper .tall {
+	grid-row: span 2;
+}
+.grid-wrapper .big {
+	grid-column: span 2;
+	grid-row: span 2;
+}
+/*============================*/
+
+body{
+	overflow-x: hidden;
+}
+a{
+	text-decoration: none;
+}
+.title-section{
+	border-bottom: 4px solid #FFC801;
+	display: inline-block;
+}
+#navbar{
+	background-color: #F0F5F9;
+}
+.jumbotron{
+	margin-bottom: 14px;
+	background-color: #F0F5F9;
+}
+.jumbotron .container{
+	display: flex;
+}
+#img-hero-mobile{
+	display: none;
+}
+.jumbotron .container .text-hero-mobile{
+	display: none;
+}
+
+.list-icon, .list-icon img{
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	margin-right: 14px;
+	transition: .5s;
+}
+.list-group-item:hover > .list-icon img{
+	transform: rotateY(360deg);
+	cursor: pointer;
+}
+#services .layout-services{
+	background-image: linear-gradient(to right,rgba(8, 163, 165, 0.8) 10%, rgba(8, 163, 156, 0.4));
+	padding: 40px;
+}
+#services .card-services{
+	/*background-color: rgba(9, 163, 165, .9);*/
+	background-image: linear-gradient(to right,rgba(8, 163, 165, 1) 10%, rgba(8, 163, 156, .9));
+	border: 2px solid  rgb(8, 163, 165);
+	margin: 36px 24px;
+	padding: 18px;
+}
+.card-services .services-items{
+	text-align:center;
+	padding: 24px;
+	color: white;
+	position: relative;
+}
+.card-services .services-items img, .card-services .services-items i{
+	width: 60px;
+	font-size: 60px;
+	margin: 8px 0px;
+	padding: 8px 0px;
+}
+.card-services .services-items .services-view{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	padding: 24px;
+	top:0;
+	left: 0;
+	visibility: hidden;
+	transition: visibility .7s;
+}
+.card-services .services-items:hover > .services-view{
+	visibility: visible;
+	z-index: 1;
+	text-decoration: none;
+}
+.card-services .services-items .services-layout{
+	position: absolute;
+	width: 0;
+	height: 100%;
+	padding: 0;
+	top:0;
+	left: 0;
+	transition: width .5s;
+}
+.card-services .services-items:hover > .services-layout{
+	width: 100%;
+}
+
+.accordion-button{
+	background:rgb(8, 163, 165);
+  	color: white;
+  	font-size: .6em;
+}
+.accordion-button.collapsed {
+  	background:rgb(8, 163, 165);
+  	color: white;
+  	font-size: .6em;
+}
+
+.accordion-button.collapsed::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath fill-rule='evenodd' d='M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z'/%3e%3c/svg%3e");
+}
+#img-faq-mobile{
+	display: none;
+}
+
+footer{
+	background-color: rgba(8, 163, 165, 0.5);
+	padding: 24px 0 8px;
+	position: relative;
+}
+
+/*
+# Opening Hours
+--------------------------------*/
+.opening-hours,
+.emergency-box,
+.appointment-box,
+.contact-info {
+    position: relative;
+    padding: 32px;
+    border-radius: 20px;
+    border: 2px solid #18a3eb;/*#dde4ea*/
+}
+
+.opening-hours {
+    border-color: #18a3eb;
+}
+
+.opening-hours h2,
+.emergency-box h2,
+.appointment-box h2,
+.contact-info h2 {
+    position: absolute;
+    top: -24px;
+    left: -2px;
+    height: 48px;
+    padding-right: 16px;
+    background: #fff;
+
+    font-size: 24px;
+    font-weight: 600;
+    color: #404040;
+}
+
+.opening-hours ul {
+    list-style: none;
+}
+
+.opening-hours ul li {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #828282;
+}
+
+.opening-hours ul li span {
+    display: inline-block;
+    margin-left: 5px;
+}
+
+/*
+# Emergency
+--------------------------------*/
+.emergency-box {
+    padding: 16px;
+}
+
+.emergency-box p {
+    margin-top: 16px;
+    margin-bottom: 0;
+    font-size: 13px;
+    font-style: italic;
+    color: #828282;
+}
+
+.emergency-box .call-btn {
+    max-width: 220px;
+    margin: 24px auto !important;
+}
+
+/*
+# Make an Appointment
+--------------------------------*/
+.appointment-box {
+    padding: 16px;
+}
+
+.appointment-box form {
+    margin-top: 24px;
+}
+
+.appointment-box form select,
+.appointment-box form input[type="text"],
+.appointment-box form input[type="number"] {
+    display: block;
+    width: calc(50% - 5px);
+    padding: 12px 16px ;
+    margin-bottom: 10px;
+    border: 0;
+
+    font-size: 12px;
+    font-style: italic;
+    color: #828282;
+    background: #f0f4f8;
+    outline: none;
+}
+
+.appointment-box form input[type="submit"] {
+    margin-top: 16px;
+}
