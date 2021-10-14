@@ -4,19 +4,19 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="bootstrap-5/css/bootstrap.min.css">
-		<link rel="stylesheet" href="bootstrap-5/icons/font/bootstrap-icons.css">
-		<link rel="stylesheet" href="assets/style.css">
-		<link rel="stylesheet" href="assets/responsive.css">
 		<title>Profile Rumah Sakit</title>
-		<script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="d214d659-19f5-45ca-a0e8-12be7de20163";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
-		
+		<style>
+		.jumbotron {
+		padding: 4rem 2rem;
+		}
+		</style>
 	</head>
 	<body>
 		<!-- navbar -->
-		<nav id="navbar" class="navbar navbar-expand-lg navbar-light" id="navbar">
-			<div class="container w-100">
-				<a class="navbar-brand" href="home.html">
-					<strong>MEDI<span style="color: #FFC801">CALL</span></strong>
+		<nav class="navbar navbar-expand-lg navbar-light mt-3 fixed-top" id="navbar">
+			<div class="container">
+				<a class="navbar-brand" href="#">
+					<strong>MEDI<span>CALL</span></strong>
 				</a>
 				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
 				aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -25,470 +25,42 @@
 				<div class="collapse navbar-collapse justify-content-end" id="navbarNav">
 					<ul class="nav nav-pills">
 						<li class="nav-item">
-							<a class="nav-link fw-bold" aria-current="page" href="home.html">Home &nbsp;&nbsp;</a>
+							<a class="nav-link" href="#">Home &nbsp;&nbsp;</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link fw-bold" href="about.html">About us&nbsp;&nbsp;</a>
+							<a class="nav-link" href="#">About &nbsp;&nbsp;</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link fw-bold" href="services.html">Services &nbsp;&nbsp;</a>
+							<a class="nav-link" href="#">Schedule Doctor &nbsp;&nbsp;</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link fw-bold" href="doctors.html">Doctors &nbsp;&nbsp;</a>
+							<a class="nav-link" href="#">Search &nbsp;&nbsp;</a>
 						</li>
 						<li class="nav-item">
-							<a href="#" class="nav-link rounded-pill shadow" style="background-color: #FFC801; color: white;">Contact us</a>
+							<a href="#" class="nav-link bg-custom rounded shadow" id="btn-sign">SIGN UP</a>
 						</li>
 					</ul>
 					
 				</div>
 			</div>
 		</nav>
-		<!-- end navbar -->
-		<div class="jumbotron">
-			<div class="container align-items-center" style="height: 80vh;">
-				<br>
-				<img id="img-hero-mobile" src="assets/img/hero.png" alt="">
-				<!-- header -->
-				<div class="text-hero-mobile col-sm-12 mt-3">
-					<h3 class="text-capitalize text-center">we are providing best and affordable health care</h3>
-					<P>Our skilled doctors have tremendous experience with wide range of diseases to serve the needs of our patients</P>
-					<a href="#" class="btn rounded-pill text-white" style="background-color: #08A39C">book an appointment <i class="bi bi-arrow-right"></i></a>
-				</div>
-				<div class="row align-items-center">
-					<div class="text-hero col-md-4 px-0">
-						<h1 class="text-capitalize">we are providing best and affordable health care</h1>
-						<br>
-						<P>Our skilled doctors have tremendous experience with wide range of diseases to serve the needs of our patients</P>
-						<br>
-						<a href="#" class="btn rounded-pill text-white" style="background-color: #08A39C">book an appointment <i class="bi bi-arrow-right"></i></a>
-					</div>
-					<div class="col-md-8 text-end">
-						<img id="img-hero" src="assets/img/hero.png" alt="" width="500px">
-					</div>
-				</div>
-				
-			</div>
-		</div>
-		<br>
-		<div class="homepage-boxes mt-4">
+		<!-- content -->
+		<div class="jumbotron" style="height: 100vh">
 			<div class="container">
-				<div class="row">
-					<div class="col-12 col-md-6 col-lg-4">
-						<div class="opening-hours">
-							<h2 class="d-flex align-items-center">Opening Hours</h2>
-							<ul class="p-0 m-0">
-								<li>Monday - Thursday <span>8.00 - 19.00</span></li>
-								<li>Friday <span>8.00 - 18.30</span></li>
-								<li>Saturday <span>9.30 - 17.00</span></li>
-								<li>Sunday <span>9.30 - 15.00</span></li>
-							</ul>
-						</div>
+				<div class="row" style="align-items: center;">
+					<div class="col-md-4">
+						<h1 style="font-size: 3rem">Lorem Ipsum</h1>
+						<p class="text-wrap">Lorem ipsum dolor, sit, amet consectetur adipisicing elit. Omnis ab tempora eum, animi eaque. Vel magni odit libero voluptate facilis.</p>
+						<a href="#" class="btn btn-danger">Ambil antrian ></a>
 					</div>
-					<div class="col-12 col-md-6 col-lg-3 mt-5 mt-md-0">
-						<div class="emergency-box">
-							<h2 class="d-flex align-items-center">Emergency</h2>
-							<div class="call-btn button gradient-bg">
-								<a class="btn btn-primary rounded-pill" href="#"> +62 888 7789 8892</a>
-							</div>
-							<p>Lorem ipsum dolor sit amet, cons ectetur adipiscing elit. Donec males uada lorem maximus mauris sceler isque, at rutrum nulla.</p>
-						</div>
-					</div>
-					<div class="col-12 col-md-6 col-lg-5 mt-5 mt-lg-0">
-						<div class="appointment-box">
-							<h2 class="d-flex align-items-center">Make an Appointment</h2>
-							<form class="d-flex flex-wrap justify-content-between">
-								<select class="select-department">
-									<option value="value1">Select Department</option>
-									<option value="value2">Select Department 1</option>
-									<option value="value3">Select Department 2</option>
-								</select>
-								<select class="select-doctor">
-									<option>Select Doctor</option>
-									<option>Select Doctor 1</option>
-									<option>Select Doctor 2</option>
-								</select>
-								<input type="text" placeholder="Name">
-								<input type="number" placeholder="Phone No">
-								<input class="btn btn-primary rounded-pill" type="submit" value="Boom Appoitnment">
-							</form>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<br>
-		<br>
-		<div class="container my-5">
-			<!-- about -->
-			<div class="col-sm-12 text-center">
-				<h1 class="title-section">MEDICALL SUPERIORITY</h1>
-			</div>
-			<br>
-			<br>
-			
-			<div class="row">
-				<div class="col-md-5">
-					<img class="superiority show-on-scroll" src="assets/img/superiority.png" alt="" width="90%">
-				</div>
-				<div class="col-md-7 p-4">
-					<ul class="list-group border-0 flush">
-						<li class="list-group-item border-0 d-flex">
-							<div class="list-icon show-on-scroll">
-								<img src="assets/img/modern.png" alt="">
-							</div>
-							<div class="list-text">
-								<h3>MODERN</h3>
-								<p>Lorem ipsum dolor sit amet consectetur adipisicing, elit. Minus exercitationem vitae culpa porro doloremque ad.</p>
-							</div>
-						</li>
-						<li class="list-group-item border-0 d-flex">
-							<div class="list-icon show-on-scroll">
-								<img src="assets/img/profesional.png" alt="">
-							</div>
-							<div class="list-text">
-								<h3>PROFESIONAL</h3>
-								<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium eum velit, beatae dicta quae nisi reprehenderit qui nemo dignissimos, molestias.</p>
-							</div>
-						</li>
-						<li class="list-group-item border-0 d-flex">
-							<div class="list-icon show-on-scroll">
-								<img src="assets/img/responsible.png" alt="">
-							</div>
-							<div class="list-text">
-								<h3>RESPONSIBLE</h3>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur sed impedit beatae culpa aut ad natus aperiam, est quidem facilis, veritatis quasi iste repellat ipsa?</p>
-							</div>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-		<br>
-		<br>
-		<div id="services" class="" style="background: url(assets/img/hospital.png) no-repeat;
-			background-size: cover;">
-			<div class="layout-services">
-				<div class="container">
-					<div class="card card-services">
-						<h1 class="text-center text-white">OUR SERVICES</h1>
-						<br>
-						<br>
-						<br>
-						<div class="row">
-							<div class="col-md-4">
-								<div class="services-items">
-									<div class="services-layout" style="background: url(assets/img/bg-services.png) no-repeat; background-size: cover; background-position: center;">
-										
-									</div>
-									<div class="services-view">
-										<img src="assets/img/cardiology.png" alt="">
-										<h4><a href="service-item.html" class="stretched-link text-white">CARDIOLOGY</a></h4>
-									</div>
-									
-									<img src="assets/img/cardiology.png" alt="">
-									<h4>CARDIOLOGY</h4>
-								</div>
-							</div>
-							<div class="col-md-4">
-								<div class="services-items">
-									<div class="services-layout" style="background: url(assets/img/bg-services.png) no-repeat; background-size: cover; background-position: center;">
-										
-									</div>
-									<div class="services-view">
-										<img src="assets/img/dentalcare.png" alt="">
-										<h4><a href="service-item.html" class="stretched-link text-white">DENTAL CARE</a></h4>
-									</div>
-									
-									<img src="assets/img/dentalcare.png" alt="">
-									<h4>DENTAL CARE</h4>
-								</div>
-							</div>
-							<div class="col-md-4">
-								<div class="services-items">
-									<div class="services-layout" style="background: url(assets/img/bg-services.png) no-repeat; background-size: cover; background-position: center;">
-										
-									</div>
-									<div class="services-view">
-										<img src="assets/img/surgery.png" alt="">
-										<h4><a href="service-item.html" class="stretched-link text-white">SURGERY</a></h4>
-									</div>
-									
-									<img src="assets/img/surgery.png" alt="">
-									<h4>SURGERY</h4>
-								</div>
-							</div>
-						</div>
-						<br>
-						<div class="row mt-5">
-							<div class="col-md-4">
-								<div class="services-items">
-									<div class="services-layout" style="background: url(assets/img/bg-services.png) no-repeat; background-size: cover; background-position: center;">
-										
-									</div>
-									<div class="services-view">
-										<img src="assets/img/gastroenterology.png" alt="">
-										<h4><a href="service-item.html" class="stretched-link text-white">GASTROENTEROLOGY</a></h4>
-									</div>
-									
-									<img src="assets/img/gastroenterology.png" alt="">
-									<h4>GASTROENTEROLOGY</h4>
-								</div>
-							</div>
-							<div class="col-md-4">
-								<div class="services-items">
-									<div class="services-layout" style="background: url(assets/img/bg-services.png) no-repeat; background-size: cover; background-position: center;">
-										
-									</div>
-									<div class="services-view">
-										<img src="assets/img/glasses.png" alt="">
-										<h4><a href="service-item.html" class="stretched-link text-white">OPTHALMOLOGY</a></h4>
-									</div>
-									
-									<img src="assets/img/glasses.png" alt="">
-									<h4>OPTHALMOLOGY</h4>
-								</div>
-							</div>
-							<div class="col-md-4">
-								<div class="services-items">
-									<div class="services-layout" style="background: url(assets/img/bg-services.png) no-repeat; background-size: cover; background-position: center;">
-										
-									</div>
-									<div class="services-view">
-										<img src="assets/img/medicallab.png" alt="">
-										<h4><a href="service-item.html" class="stretched-link text-white">MEDICAL LAB</a></h4>
-									</div>
-									
-									<img src="assets/img/medicallab.png" alt="">
-									<h4>MEDICAL LAB</h4>
-								</div>
-							</div>
-						</div>
-						<br>
-						<div class="row">
-							<div class="col-md-4">
-								<div class="services-items">
-									<div class="services-layout" style="background: url(assets/img/bg-services.png) no-repeat; background-size: cover; background-position: center;">
-										
-									</div>
-									<div class="services-view">
-										<img src="assets/img
-										/neurology.png" alt="">
-										<h4><a href="service-item.html" class="stretched-link text-white">NEUROLOGY</a></h4>
-									</div>
-									
-									<img src="assets/img
-									/neurology.png" alt="">
-									<h4>NEUROLOGY</h4>
-								</div>
-							</div>
-							<div class="col-md-4">
-								<div class="services-items">
-									<div class="services-layout" style="background: url(assets/img/bg-services.png) no-repeat; background-size: cover; background-position: center;">
-										
-									</div>
-									<div class="services-view">
-										<img src="assets/img
-										/orthopaedy.png" alt="">
-										<h4><a href="service-item.html" class="stretched-link text-white">ORTHOPAEDY</a></h4>
-									</div>
-									
-									<img src="assets/img
-									/orthopaedy.png" alt="">
-									<h4>ORTHOPAEDY</h4>
-								</div>
-							</div>
-							<div class="col-md-4">
-								<div class="services-items">
-									<div class="services-layout" style="background: url(assets/img/bg-services.png) no-repeat; background-size: cover; background-position: center;">
-										
-									</div>
-									<div class="services-view">
-										<img src="assets/img
-										/pediatry.png" alt="">
-										<h4><a href="service-item.html" class="stretched-link text-white">PEDIATRY</a></h4>
-									</div>
-									
-									<img src="assets/img
-									/pediatry.png" alt="">
-									<h4>PEDIATRY</h4>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- container-end -->
-				
-			</div>
-			<!-- services-layout -->
-		</div>
-		<!-- services -->
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<div class="col-sm-12 text-center my-5">
-			<h1 class="title-section">OUR DOCTORS</h1>
-		</div>
-		<br>
-		<div id="doctors" class="show-on-scroll">
-			<!-- <div style="background-color:rgba(221, 240, 245, .8);"> -->
-			<div>
-				<!-- <img src="assets/img/bg-right.png" alt="" style="width: 150px;position: absolute; top: 0; right: 0;">
-				<img src="assets/img/bg-left.png" alt="" style="width: 150px;position: absolute; bottom: 0; left: 0;"> -->
-				<div class="container p-4">
-					<div class="row">
-						<div class="col-md-3 p-4">
-							<div class="card text-center p-0">
-								<div class="card-header p-0">
-									<img src="assets/img/team-4.jpg" alt="" width="100%">
-								</div>
-								<div class="card-body">
-									<h5>Dr. Anastasya</h5>
-									<p>Ahli Bedah Syaraf</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-3 p-4">
-							<div class="card text-center p-0">
-								<div class="card-header p-0">
-									<img src="assets/img/team-3.jpg" alt="" width="100%">
-								</div>
-								<div class="card-body">
-									<h5>Dr. David Smith</h5>
-									<p>Ahli Bedah Syaraf</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-3 p-4">
-							<div class="card text-center p-0">
-								<div class="card-header p-0">
-									<img src="assets/img/team-2.jpg" alt="" width="100%">
-								</div>
-								<div class="card-body">
-									<h5>Dr. Aurelie Pots</h5>
-									<p>Ahli Bedah Syaraf</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-3 p-4">
-							<div class="card text-center p-0">
-								<div class="card-header p-0">
-									<img src="assets/img/team-1.jpg" alt="" width="100%">
-								</div>
-								<div class="card-body">
-									<h5>Dr. Elizabeth Olsen</h5>
-									<p>Ahli Bedah Syaraf</p>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-sm-12 text-center">
-						<a href="doctors.html" class="btn rounded-pill text-white" style="background-color: #08A39C">view all <i class="bi bi-arrow-right"></i></a>
+					<div class="col-md-8">
+						<img src="assets/img/hero.jpg" alt="" width="100%">
 					</div>
 				</div>
 			</div>
 			
 			
 		</div>
-		<!-- doctor -->
-		<br>
-		<br>
-		<br>
-		<div id="faq mt-5">
-			<div class="container">
-				<div class="col-sm-12 text-center my-5">
-					<h1 style="border-bottom: 4px solid #FFC801; display: inline-block;">FREQUENTLY ASKED QUESTION</h1>
-				</div>
-				<img id="img-faq-mobile" class="show-on-scroll" src="assets/img/faq2.png" alt="" width="100%">
-				<div class="row my-5">
-					<div id="faq" class="col-md-6 show-on-scroll">
-						
-						<div class="accordion" id="accordionExample">
-							<div class="accordion-item">
-								<h2 class="accordion-header" id="headingOne">
-								<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-								Lorem ipsum dolor sit amet consectetur adipisicing, elit. Reprehenderit, necessitatibus?
-								</button>
-								</h2>
-								<div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-									<div class="accordion-body">
-										<strong>Lorem ipsum dolor sit amet consectetur.</strong>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus numquam, consectetur ut quam laborum et reprehenderit doloremque sunt ad, nihil. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum corporis soluta ad dolore provident repellendus voluptates mollitia accusamus quod labore.
-									</div>
-								</div>
-							</div>
-							<div class="accordion-item">
-								<h2 class="accordion-header" id="headingTwo">
-								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-								Lorem ipsum dolor sit amet consectetur adipisicing?
-								</button>
-								</h2>
-								<div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-									<div class="accordion-body">
-										<strong>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur, tempora natus est?</strong>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo dolorem eligendi excepturi, mollitia quasi voluptas, ut vel. Perferendis, velit accusantium totam asperiores similique quo, quibusdam, quia sapiente omnis veritatis quas.
-									</div>
-								</div>
-							</div>
-							<div class="accordion-item">
-								<h2 class="accordion-header" id="headingThree">
-								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-								Lorem ipsum dolor, sit amet consectetur?
-								</button>
-								</h2>
-								<div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-									<div class="accordion-body">
-										<strong>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</strong>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta nulla explicabo tenetur nostrum, dignissimos aut, id ipsa totam accusamus necessitatibus expedita asperiores voluptatibus cupiditate molestiae quas beatae voluptatum qui tempora magni? Facere nemo incidunt obcaecati?
-									</div>
-								</div>
-							</div>
-						</div>
-						
-					</div>
-					<div class="col-md-6 text-end p-3">
-						<img id="img-faq" class="show-on-scroll" src="assets/img/faq2.png" alt="" width="100%">
-					</div>
-				</div>
-			</div>
-			
-		</div>
-		<!-- faq end -->
-		<footer>
-			<img src="assets/img/bg-right.png" width="150px" alt="" style="position: absolute; top: 0; right: 0;">
-			<img src="assets/img/bg-left.png" width="120px" alt="" style="position: absolute; bottom: 0; left: 0;">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-4" style="z-index: 1;">
-						<h3 class="text-white">MEDI<span style="color: #FFC801">CALL</span></h3>
-						<br>
-						<p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, earum provident vitae, incidunt autem totam esse commodi nemo asperiores dolorum, minima sunt, fugiat facere sit. Quam odio itaque quasi fugit.</p>
-					</div>
-					<div class="col-md-4 text-white px-4">
-						<h5>Contact</h5>
-						<br>
-						<p><strong>Adress:</strong> Lorem ipsum dolor, sit amet consectetur adipisicing</p>
-						<p><strong>Phone:</strong> +62881880807</p>
-						<p><strong>Email: </strong>medicallcenter@gmail.com</p>
-					</div>
-					<div class="col-md-4 text-white text-center">
-						<h5>Connect With us</h5>
-						<br>
-						<a class="me-3" href=""><h3 class="d-inline bi bi-facebook"></h3></a>
-						<a class="me-3" href=""><h3 class="d-inline bi bi-instagram text-danger"></h3></a>
-						<a class="me-3" href=""><h3 class="d-inline bi bi-twitter"></h3></a>
-						<a class="me-3" href=""><h3 class="d-inline bi bi-telegram"></h3></a>
-						
-					</div>
-				</div>
-				<br><br><br><br>
-			</div>
-			<div class="row">
-				<div class="copyright text-center col-sm-12" style="z-index: 1;">
-					<p class="m-0"><strong>Copyright &copy; <a href="#">MEDICALL</a>&nbsp;2021</strong></p>
-				</div>
-			</div>
-		</footer>
 		<script src="bootstrap-5/js/bootstrap.min.js"></script>
-		<script src="assets/script.js"></script>
 	</body>
 </html>
